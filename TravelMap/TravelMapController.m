@@ -61,7 +61,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
-    locations = [NSMutableArray arrayWithObjects:[[CLLocation alloc] initWithLatitude:20.02556 longitude:119.0154],[[CLLocation alloc] initWithLatitude:22.72556 longitude:113.5154],[[CLLocation alloc] initWithLatitude:23.02556 longitude:112.0154],[[CLLocation alloc] initWithLatitude:12.254 longitude:110.0154], nil];
+    locations = [NSMutableArray arrayWithObjects:[[CLLocation alloc] initWithLatitude:20.02556 longitude:119.0154],[[CLLocation alloc] initWithLatitude:22.72556 longitude:113.5154],[[CLLocation alloc] initWithLatitude:23.02556 longitude:113.5154],[[CLLocation alloc] initWithLatitude:12.254 longitude:110.0154], nil];
     
     pointsCount = 0;
     

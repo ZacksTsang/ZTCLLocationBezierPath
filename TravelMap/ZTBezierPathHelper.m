@@ -9,7 +9,7 @@
 #import "ZTBezierPathHelper.h"
 
 //angle of the auxiliaty point between start point and end point
-#define ANGEL_OF_AUXILIARY_POINT 90
+#define ANGEL_OF_AUXILIARY_POINT 30
 
 @implementation ZTBezierPathHelper
 
@@ -82,7 +82,7 @@
     
     
     //distance taget point between and center point
-    double adis=(distance/2.0)/tan(angle/2.0*M_PI/180);
+    double adis=(distance/2.0)*tan(angle*M_PI/180);
     
     
     //target distance  longt and lat
@@ -116,7 +116,7 @@
     if (target.longitude>180) {
         target.longitude=target.longitude-360.0;
     }else if (target.longitude<-180){
-        target.latitude=360.0f+target.longitude;
+        target.longitude=360.0f+target.longitude;
     }
     
     return target;
